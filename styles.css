@@ -1,0 +1,43 @@
+@import url(https://fonts.bunny.net/css?family=alkatra:400|outfit:400);
+*{
+    padding: 0;margin: 0;
+    font-family: 'Alkatra', sans-serif;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.9), rgba(255, 166, 0, 0.9), rgba(255, 255, 0, 0.9), rgba(0, 128, 0, 0.9), rgba(0, 0, 255, 0.9), rgba(76, 0, 130, 0.9), rgba(238, 130, 238, 0.9), rgba(255, 0, 0, 0.9));
+    
+}
+.main_box{
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.7), rgba(255, 166, 0, 0.7), rgba(255, 255, 0, 0.7), rgba(0, 128, 0, 0.7), rgba(0, 0, 255, 0.7), rgba(76, 0, 130, 0.7), rgba(238, 130, 238, 0.7), rgba(255, 0, 0, 0.7));
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 23.5rem;
+}
+.buttons{
+    padding: .8rem 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+  border: none;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.6), rgba(255, 166, 0, 0.6), rgba(255, 255, 0, 0.6), rgba(0, 128, 0, 0.6), rgba(0, 0, 255, 0.6), rgba(76, 0, 130, 0.6), rgba(238, 130, 238, 0.6), rgba(255, 0, 0, 0.6));
+    color: white;
+    
+    &:hover{
+        cursor: pointer;
+        transition: 200ms;
+        opacity: .8;
+    }
+}
+@media only screen and (max-width: 600px){
+  
+    .main_box{
+        width: 50%;
+    }
+}
+
