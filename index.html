@@ -11,122 +11,192 @@
 <body>
     <section id="main_background">
         <div id="the_container" class="main_box">
-            <button onclick="velvetGradient()" id="velvetID" class="  buttons ">Velvet Gradient</button>
-            <button onclick="figGradient()" id="figID" class=" buttons "> Fig Gradient</button>
-            <button onclick="deepGradient()" id="deepID" class=" buttons ">Deep Gradient</button>
-            <button onclick="forestGradient()" id="forestID" class=" buttons ">Forest Gradient</button>
-            <button onclick="smokeGradient()" id="smokeID" class=" buttons ">Smoke Gradient</button>
-            <button onclick="onyxGradient()" id="onyxID" class=" buttons ">Onyx gradient</button>
-            <button onclick="silverGradient()" id="silverID" class=" buttons ">Silver Gradient</button>
-            <button onclick="goldGradient()" id="goldID" class=" buttons ">Gold Gradient</button>
+            <button class=" buttons first_button">Velvet Gradient</button>
+            <button class=" buttons  second_button"> Fig Gradient</button>
+            <button class=" buttons third_button">Deep Gradient</button>
+            <button class=" buttons fourth_button">Forest Gradient</button>
+            <button class=" buttons fifth_button">Smoke Gradient</button>
+            <button class=" buttons sixth_button">Onyx gradient</button>
+            <button class=" buttons seventh_button">Silver Gradient</button>
+            <button class=" buttons eighth_button">Gold Gradient</button>
         </div>
     </section>
 </body>
 <script>
+    // let theFirstButton = document.querySelector('.first_button')
+    // theFirstButton.addEventListener('click', clickIt);
+    // function clickIt(){
+    //     theFirstButton.classList.toggle('first_button');
+    // }
+    let theFirstButton = document.querySelector(".first_button");
+    theFirstButton.addEventListener("click", velvetGradient);
     function velvetGradient() {
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+        theFirstButton.classList.add("active_velvet");
+        document.querySelector("#the_container").classList.add("velvet_box");
+        document.querySelector("#main_background").classList.add("velvet_box");
+    }
 
-    }
+    let theSecondButton = document.querySelector(".second_button");
+    theSecondButton.addEventListener("click", figGradient);
     function figGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+        theSecondButton.classList.add("active_fig");
+        document.querySelector("#the_container").classList.add("fig_box");
+        document.querySelector("#main_background").classList.add("fig_box");
     }
+
+    let theThirdButton = document.querySelector(".third_button");
+    theThirdButton.addEventListener("click", deepGradient);
     function deepGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+        theThirdButton.classList.add("active_deep");
+        document.querySelector("#the_container").classList.add("deep_box");
+        document.querySelector("#main_background").classList.add("deep_box");
     }
+
+    let theFourthButton = document.querySelector(".fourth_button");
+    theFourthButton.addEventListener("click", forestGradient);
     function forestGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+        theFourthButton.classList.add("active_forest");
+        document.querySelector("#the_container").classList.add("forest_box");
+        document.querySelector("#main_background").classList.add("forest_box");
     }
+
+    let theFifthButton = document.querySelector(".fifth_button");
+    theFifthButton.addEventListener("click", smokeGradient);
     function smokeGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('silverID').style.backgroundImage ='linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+        theFifthButton.classList.add("active_smoke");
+        document.querySelector("#the_container").classList.add("smoke_box");
+        document.querySelector("#main_background").classList.add("smoke_box");
     }
+
+    let theSixthButton = document.querySelector(".sixth_button");
+    theSixthButton.addEventListener("click", onyxGradient);
     function onyxGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
-        document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+        theSixthButton.classList.add("active_onyx");
+        document.querySelector("#the_container").classList.add("onyx_box");
+        document.querySelector("#main_background").classList.add("onyx_box");
     }
+
+    let theSeventhButton = document.querySelector(".seventh_button");
+    theSeventhButton.addEventListener("click", silverGradient);
     function silverGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('velvetID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('deepID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('forestID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('figID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('smokeID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('goldID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('the_container').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
-        document.getElementById('main_background').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+        theSeventhButton.classList.add("active_silver");
+        document.querySelector("#the_container").classList.add("silver_box");
+        document.querySelector("#main_background").classList.add("silver_box");
     }
+
+    let theEighthButton = document.querySelector(".eighth_button");
+    theEighthButton.addEventListener("click", goldGradient);
     function goldGradient() {
-        document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('velvetID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('deepID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('forestID').style.backgroundImage =   'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('figID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('smokeID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('onyxID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('silverID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('goldID').style.backgroundImage =   'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('the_container').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
-        document.getElementById('main_background').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+        theEighthButton.classList.add("active_gold");
+        document.querySelector("#the_container").classList.add("gold_box");
+        document.querySelector("#main_background").classList.add("gold_box");
     }
+
+
+    /* function velvetGradient() {
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#612c40,#c5919e,#f7e4dd)';
+ 
+     }
+     function figGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg, #3a203d,#61495f,#cbc9cc)';
+     }
+     function deepGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#003449,#9cb2bf,#c5d4db)';
+     }
+     function forestGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#144033,#4e7560,#b5ccc2)';
+     }
+     function smokeGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('silverID').style.backgroundImage ='linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#5f6062,#82736c,#b7b6b1)';
+     }
+     function onyxGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('velvetID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('deepID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('forestID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('smokeID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('goldID').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('the_container').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+         document.getElementById('main_background').style.backgroundImage = 'linear-gradient(45deg,#202022,#a0794e,#ccb582)';
+     }
+     function silverGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('velvetID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('deepID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('forestID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('figID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('smokeID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('onyxID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('silverID').style.backgroundImage = 'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('goldID').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('the_container').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+         document.getElementById('main_background').style.backgroundImage =  'linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8)';
+     }
+     function goldGradient() {
+         document.getElementById('figID').style.backgroundImage = 'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('velvetID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('deepID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('forestID').style.backgroundImage =   'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('figID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('smokeID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('onyxID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('silverID').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('goldID').style.backgroundImage =   'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('the_container').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+         document.getElementById('main_background').style.backgroundImage =  'linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866)';
+     }*/
 </script>
 
 </html>
