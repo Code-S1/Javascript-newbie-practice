@@ -40,29 +40,44 @@ section {
     }
 }
 
-.active_velvet,.velvet_box {
-    background-image: linear-gradient(45deg, #612c40, #c5919e, #f7e4dd);  
+.active_velvet,
+.velvet_box {
+    background-image: linear-gradient(45deg, #612c40, #c5919e, #f7e4dd);
 }
-.active_fig,.fig_box {
-    background-image: linear-gradient(45deg, #3a203d,#61495f,#cbc9cc);  
+
+.active_fig,
+.fig_box {
+    background-image: linear-gradient(45deg, #3a203d, #61495f, #cbc9cc);
 }
-.active_deep,.deep_box {
-    background-image: linear-gradient(45deg,#003449,#9cb2bf,#c5d4db);  
+
+.active_deep,
+.deep_box {
+    background-image: linear-gradient(45deg, #003449, #9cb2bf, #c5d4db);
 }
-.active_forest,.forest_box {
-    background-image: linear-gradient(45deg,#144033,#4e7560,#b5ccc2);  
+
+.active_forest,
+.forest_box {
+    background-image: linear-gradient(45deg, #144033, #4e7560, #b5ccc2);
 }
-.active_smoke,.smoke_box {
-    background-image:linear-gradient(45deg,#5f6062,#82736c,#b7b6b1);  
+
+.active_smoke,
+.smoke_box {
+    background-image: linear-gradient(45deg, #5f6062, #82736c, #b7b6b1);
 }
-.active_onyx,.onyx_box {
-    background-image: linear-gradient(45deg,#202022,#a0794e,#ccb582);  
+
+.active_onyx,
+.onyx_box {
+    background-image: linear-gradient(45deg, #202022, #a0794e, #ccb582);
 }
-.active_silver,.silver_box {
-    background-image: linear-gradient(45deg,#71706e, #C0C0C0, #d8d8d8);  
+
+.active_silver,
+.silver_box {
+    background-image: linear-gradient(45deg, #71706e, #C0C0C0, #d8d8d8);
 }
-.active_gold,.gold_box {
-    background-image: linear-gradient(45deg,#B59410,  #EEBC1D, #EBB866);  
+
+.active_gold,
+.gold_box {
+    background-image: linear-gradient(45deg, #B59410, #EEBC1D, #EBB866);
 }
 
 

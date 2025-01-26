@@ -31,65 +31,65 @@
     let theFirstButton = document.querySelector(".first_button");
     theFirstButton.addEventListener("click", velvetGradient);
     function velvetGradient() {
-        theFirstButton.classList.add("active_velvet");
-        document.querySelector("#the_container").classList.add("velvet_box");
-        document.querySelector("#main_background").classList.add("velvet_box");
+      theFirstButton.classList.toggle('velvet_box');
+      document.querySelector('.main_box').classList.toggle('active_velvet');
+      document.querySelector('#main_background').classList.toggle('active_velvet');
     }
 
     let theSecondButton = document.querySelector(".second_button");
     theSecondButton.addEventListener("click", figGradient);
     function figGradient() {
-        theSecondButton.classList.add("active_fig");
-        document.querySelector("#the_container").classList.add("fig_box");
-        document.querySelector("#main_background").classList.add("fig_box");
+        theSecondButton.classList.toggle("fig_box");
+        document.querySelector(".main_box").classList.toggle("active_fig");
+        document.querySelector("#main_background").classList.toggle("active_fig");
     }
 
     let theThirdButton = document.querySelector(".third_button");
     theThirdButton.addEventListener("click", deepGradient);
     function deepGradient() {
-        theThirdButton.classList.add("active_deep");
-        document.querySelector("#the_container").classList.add("deep_box");
-        document.querySelector("#main_background").classList.add("deep_box");
+        theThirdButton.classList.toggle("active_deep");
+        document.querySelector(".main_box").classList.toggle("active_deep");
+        document.querySelector("#main_background").classList.toggle("active_deep");
     }
 
     let theFourthButton = document.querySelector(".fourth_button");
     theFourthButton.addEventListener("click", forestGradient);
     function forestGradient() {
-        theFourthButton.classList.add("active_forest");
-        document.querySelector("#the_container").classList.add("forest_box");
-        document.querySelector("#main_background").classList.add("forest_box");
+        theFourthButton.classList.toggle("active_forest");
+        document.querySelector(".main_box").classList.toggle("active_forest");
+        document.querySelector("#main_background").classList.toggle("active_forest");
     }
 
     let theFifthButton = document.querySelector(".fifth_button");
     theFifthButton.addEventListener("click", smokeGradient);
     function smokeGradient() {
-        theFifthButton.classList.add("active_smoke");
-        document.querySelector("#the_container").classList.add("smoke_box");
-        document.querySelector("#main_background").classList.add("smoke_box");
+        theFifthButton.classList.toggle("active_smoke");
+        document.querySelector(".main_box").classList.toggle("active_smoke");
+        document.querySelector("#main_background").classList.toggle("active_smoke");
     }
 
     let theSixthButton = document.querySelector(".sixth_button");
     theSixthButton.addEventListener("click", onyxGradient);
     function onyxGradient() {
-        theSixthButton.classList.add("active_onyx");
-        document.querySelector("#the_container").classList.add("onyx_box");
-        document.querySelector("#main_background").classList.add("onyx_box");
+        theSixthButton.classList.toggle("active_onyx");
+        document.querySelector(".main_box").classList.toggle("active_onyx");
+        document.querySelector("#main_background").classList.toggle("active_onyx");
     }
 
     let theSeventhButton = document.querySelector(".seventh_button");
     theSeventhButton.addEventListener("click", silverGradient);
     function silverGradient() {
-        theSeventhButton.classList.add("active_silver");
-        document.querySelector("#the_container").classList.add("silver_box");
-        document.querySelector("#main_background").classList.add("silver_box");
+        theSeventhButton.classList.toggle("active_silver");
+        document.querySelector(".main_box").classList.toggle("active_silver");
+        document.querySelector("#main_background").classList.toggle("active_silver");
     }
 
     let theEighthButton = document.querySelector(".eighth_button");
     theEighthButton.addEventListener("click", goldGradient);
     function goldGradient() {
-        theEighthButton.classList.add("active_gold");
-        document.querySelector("#the_container").classList.add("gold_box");
-        document.querySelector("#main_background").classList.add("gold_box");
+        theEighthButton.classList.toggle("active_gold");
+        document.querySelector(".main_box").classList.toggle("active_gold");
+        document.querySelector("#main_background").classList.toggle("active_gold");
     }
 
 
